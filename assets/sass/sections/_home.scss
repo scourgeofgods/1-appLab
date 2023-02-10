@@ -1,0 +1,9 @@
+.bg-holder {
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: -1;
+}

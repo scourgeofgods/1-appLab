@@ -1,0 +1,89 @@
+$font-family: 'Open Sans', sans-serif;
+$font-family-base: $font-family;
+$first: #2500f9;
+$third: #fcae61;
+$forth: #1f1534;
+$text: #616368;
+$title-clr: #242f51;
+$text-color: $text;
+$primary: $first;
+$warning: $third;
+$secondary: $forth;
+$enable-negative-margins: true;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1536px,
+) !default;
+$font-family: 'Poppins', sans-serif;
+body {
+  font-family: $font-family;
+  color: $text-color !important;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+section {
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-clr !important;
+}
+
+$carousel-control-color: $primary !important;
+$carousel-control-icon-width: 2rem !default;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+$carousel-control-prev-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>") !default;
+$carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>") !default;
+.bg-1000 {
+  background-color: $title-clr;
+}
+.py-8 {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pt-7 {
+  padding-top: 5rem;
+}
+.pb-5 {
+  padding-bottom: 3rem;
+}
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

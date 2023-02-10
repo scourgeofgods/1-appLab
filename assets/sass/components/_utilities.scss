@@ -1,0 +1,21 @@
+@use '../custom' as *;
+
+.fs-1 {
+  font-size: 1.2rem !important;
+}
+
+.w-sm-50 {
+  @media (min-width: $sm) {
+    width: 50%;
+  }
+}
+.w-md-75 {
+  @media (min-width: $md) {
+    width: 75%;
+  }
+}
+.w-xl-50 {
+  @media (min-width: $xl) {
+    width: 75%;
+  }
+}
